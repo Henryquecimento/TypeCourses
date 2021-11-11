@@ -10,5 +10,10 @@ export function CreateCourse(request: Request, response: Response) {
     educator: "Henryque"
   });
 
+  CreateCourseService.execute({
+    name: "Elixir",
+    educator: "Felype"
+  });
+
   return response.json({message: "Proccess finished!"})
 }

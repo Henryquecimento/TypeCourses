@@ -11,6 +11,10 @@ function CreateCourse(request, response) {
         duration: 10,
         educator: "Henryque"
     });
+    CreateCourseService_1.default.execute({
+        name: "Elixir",
+        educator: "Felype"
+    });
     return response.json({ message: "Proccess finished!" });
 }
 exports.CreateCourse = CreateCourse;
